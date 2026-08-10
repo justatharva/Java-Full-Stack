@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+<session-factory>
+<!-- DB Configuration -->
+<property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/java</property>
+<property name = "hibernate.connection.username">root</property>
+<property name = "hibernate.connection.password">Atharva$311</property>
+
+<!-- Hibernate Configuration -->
+<property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name = "hibernate.hbm2ddl.auto">create</property>
+<property name = "hibernate.show_sql">true</property>
+
+<!-- Mapping Class -->
+<!-- <mapping class = "com.CRUD.Student"/> -->
+
+<mapping class = "com.mapping.Questions"/>
+<mapping class = "com.mapping.Answers"/>
+
+<!-- <mapping class = "com.mapping.Teacher"/>
+<mapping class = "com.mapping.Students"/> -->
+
+<!-- <mapping class = "com.mapping.Employes"/>
+<mapping class = "com.mapping.Projects"/> -->
+
+<!-- <mapping class = "HibernateHQL.StudentHQL"/> -->
+</session-factory>
+</hibernate-configuration>
