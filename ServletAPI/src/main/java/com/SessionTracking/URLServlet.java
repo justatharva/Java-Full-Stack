@@ -23,6 +23,6 @@ public class URLServlet extends HttpServlet {
 		out.println("Name is "+name+"<br>");
 		out.println("Email is "+email+"<br>");
 		
-		out.println("<a href='URLServlet2' MyName = ? MyEmail = ?>Click Me</a>");
+		out.println("<a href='URLServlet2?MyName="+name+"&MyEmail="+email+"'>Click Me</a>");
 	}
 }
