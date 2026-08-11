@@ -25,9 +25,15 @@ public class CookieServlet extends HttpServlet {
     		out.println("Email is "+email+"<br>");
     		out.println("City is "+city+"<br>");
     		
-    		Cookie cookie =  new Cookie("name", name);
-    		response.addCookie(cookie);
-    		out.println(cookie);
+    		Cookie cookie1 =  new Cookie("name", name);
+    		response.addCookie(cookie1);
+    		Cookie cookie2 =  new Cookie("Email", email);
+    		response.addCookie(cookie2);
+    		Cookie cookie3 =  new Cookie("City", city);
+    		response.addCookie(cookie3);
+    		Cookie cookie4 =  new Cookie("Password", password);
+    		response.addCookie(cookie4);
+    		
     		out.println("<a href='CookieServlet2'> click here</a>");
     	}
 
