@@ -22,7 +22,5 @@ public class URLServlet2 extends HttpServlet {
 		
 		out.println("Name is "+n+"<br>");
 		out.println("Email is "+e+"<br>");
-		
-		
 	}
 }
