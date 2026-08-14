@@ -43,6 +43,9 @@ public class AddBook extends HttpServlet {
 		} catch (Exception e) {
 
 		}
+		out.println("<form action='BookList'>");
+		out.println("<button type='submit'>View Records</button>");
+		out.print("</form>");
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
