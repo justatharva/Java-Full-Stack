@@ -47,7 +47,7 @@ public class Deletebook extends HttpServlet {
 //			String shiftSQL = "UPDATE users SET id = id - 1 WHERE id > ?";
 //			PreparedStatement shiftStmt = con.prepareStatement(shiftSQL);
 //			shiftStmt.setInt(1, uid);
-//            shiftStmt.executeUpdate();
+//          shiftStmt.executeUpdate();
 //            
 			PreparedStatement resetStmt = con.prepareStatement(resetCounterSQL);
 			resetStmt.executeUpdate();
