@@ -52,7 +52,7 @@ public class BookList extends HttpServlet {
 						+ "<td>"+rs.getString("bookedition")+"</td>"
 						+ "<td>"+rs.getString("bookprice")+"</td>"
 						+ "<td><a href='Edit?id="+id+"'>Edit</a>"
-						+ "<td><a href='delete?id="+id+"'>Delete</a>"
+						+ "<td><a href='Deletebook?id="+id+"'>Delete</a>"
 						+ "</tr>");
 			}
 			out.print("</table>"
