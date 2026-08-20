@@ -35,8 +35,10 @@ public class BookList extends HttpServlet {
 					+ "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' crossorigin='anonymous'>"
 					+ "</head>"
 					+ "<body>"
-					+ "<table class='table table-dark table-striped' style='width:100%'>"
-					+ "<tr>"
+					+"<div class='container'>"
+					+"<h1 class='text-center' style='margin-top: 150px; color:red; background-color:black; border: 2px solid black; border-radius: 10px; font-family: Poppins;'>Book List</h1>"
+					+ "<table class='table table-dark table-striped' style='width:100%;'>"
+					+ "<tr style='border: 2px solid black; border-radius:10px;'>"
 					+ "<th>Book ID</th>"
 					+ "<th>Book Name</th>"
 					+ "<th>Book Edition</th>"
@@ -56,6 +58,7 @@ public class BookList extends HttpServlet {
 						+ "</tr>");
 			}
 			out.print("</table>"
+					+"</div>"
 					+ "</body>"
 					+ "</html>");
 		} catch (Exception e) {
