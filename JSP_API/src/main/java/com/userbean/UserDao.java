@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDao {
 	public static Connection con = null;
@@ -67,5 +69,51 @@ public class UserDao {
 		}
 		return a;
 		
+	}
+	
+	public static int updateData(Addinfo a) {
+		conn();
+		int rs= 0;
+		try {
+			ps = con.prepareStatement("Update user set name=?, email=?, city=?, age=? where id=?");
+			ps.setString(1, a.getMyname());
+			ps.setString(2, a.getMyemail());
+			ps.setString(3, a.getMycity());
+			ps.setInt(4, a.getMyage());
+			ps.setInt(5, a.getId());
+			rs = ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+		
+	}
+	
+	public static List<Addinfo> getAllUsers(){
+		conn();
+		List<Addinfo> list = new ArrayList<Addinfo>();
+		
+		try {
+			ps = con.prepareStatement("select * from user");
+			
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				Addinfo a = new Addinfo();
+				
+				a.setId(rs.getInt("id"));
+				a.setMyname(rs.getString("name"));
+				a.setMyemail(rs.getString("email"));
+				a.setMycity(rs.getString("city"));
+				a.setMyage(rs.getInt("age"));
+				list.add(a);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return list;
 	}
 }

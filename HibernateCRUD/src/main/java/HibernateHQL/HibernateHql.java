@@ -58,7 +58,7 @@ public class HibernateHql {
 			System.out.println(s.getName()+" : "+s.getCity()+" : "+s.getAge());
 		}
 		
-		// Fetch Query
+// 		Fetch Query
 //		String q1 = "from StudentHQL where city =:c";
 //		Query r2 = session.createQuery(q1);
 //		r2.setParameter("c", "Pune");
