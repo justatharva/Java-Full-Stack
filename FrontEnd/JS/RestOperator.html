@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...args){
+            document.write(name)
+            console.log(args);  
+            let sum=0;
+            for(let i in args)
+                sum += args[i];
+            document.write(sum);
+        }
+        let arr = [10,20,30,40];
+        // sum(10,20);
+        // sum(10,20,30);
+        // sum("Hello JS",10,20,30)    ;
+        sum("Hello JS",...arr)    ;
+    </script>
+</body>
+</html>

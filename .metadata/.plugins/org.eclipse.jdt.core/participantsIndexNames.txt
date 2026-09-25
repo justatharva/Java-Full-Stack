@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+C:\Users\sang0\Desktop\Java Full Stack\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1221040973.index
+\JSP_API\src\main\java
+C:\Users\sang0\Desktop\Java Full Stack\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3130964231.index
+\JSP_API\src\main\java
+C:\Users\sang0\Desktop\Java Full Stack\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2369189124.index
+\JSP_API\src\main\java
+C:\Users\sang0\Desktop\Java Full Stack\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3912204362.index
+\JSP_API\src\main\java

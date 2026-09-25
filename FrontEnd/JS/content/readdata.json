@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "john kumar",
+        "city" : "Pune",
+        "age" : "22"
+    },
+    {
+        "name" : "john",
+        "city" : "bmt",
+        "age" : "29"
+    },
+    {
+        "name" : "kumar",
+        "city" : "nashik",
+        "age" : "92"
+    },
+    {
+        "name" : "shekhawat",
+        "city" : "kondhwa",
+        "age" : "25"
+    }
+]

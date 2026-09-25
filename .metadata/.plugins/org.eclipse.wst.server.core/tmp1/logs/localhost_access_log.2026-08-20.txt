@@ -1,0 +1,9 @@
+127.0.0.1 - - [20/Aug/2026:12:51:45 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:51:46 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 200 1116
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:51:46 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:52:14 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 200 1149
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:52:30 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 200 1169
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:52:44 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:52:44 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:52:45 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Aug/2026:12:53:06 +0530] "GET /ServletAPI/LoginPage.html HTTP/1.1" 200 1196

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Change</title>
+    <script>
+
+        function changestyleId(){
+            var elementId = document.getElementById("header");
+            elementId.style.backgroundColor="Yellow";
+            elementId.style.color="red";
+            elementId.style.textAlign="center";
+            elementId.style.border="5px solid black";
+            console.log(elementId)
+        }
+
+        function changestyleClass(){
+            var elementClass = document.getElementsByClassName("list");
+            for (var i = 0; i < elementClass.length; i++) {
+                elementClass[i].style.backgroundColor = "yellow"; 
+                elementClass[i].style.color = "Red"; 
+                elementClass[i].style.border = "4px double black"; 
+                elementClass[i].style.textAlign = "center";
+            }
+        }
+
+        // function changestyleTag(){
+        //     var elementTag = document.getElementsByTagName("h3");
+        //     for (var i = 0; i < elementTag.length; i++) {
+        //         elementTag[i].style.backgroundColor="pink";
+        //     }
+        // }
+    </script>
+</head>
+<body>
+    <h1 id="header">Change Style Using getElementsById</h1>
+    <button onclick="changestyleId()">Change</button>
+    <br><br>
+    
+    <h2>Change Style Using getElementByClassName</h2>
+    <p class="list">HTML</p>
+    <p class="list">CSS</p>
+    <p class="list">JS</p>
+    <p class="list">React</p>
+    <button onclick="changestyleClass()">Change</button>
+
+    <h3>Change Style Using getElementByTagName</h3>
+    <!-- <button onclick="changestyleTag()">Change</button> -->
+     <script>
+        var elementTag = document.getElementsByTagName("h3");
+        elementTag[0].style.backgroundColor="yellow";
+     </script>
+</body>
+</html>

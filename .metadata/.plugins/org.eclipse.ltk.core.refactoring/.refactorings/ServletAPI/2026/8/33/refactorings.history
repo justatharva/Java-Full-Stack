@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Cookie.html&apos; to &apos;SessionTracking&apos;" description="Move &apos;Cookie.html&apos; to &apos;SessionTracking&apos;" destination="src/main/webapp/SessionTracking" element1="src/main/webapp/Cookie.html" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1786426655487" updateReferences="true"/>
+</session>
