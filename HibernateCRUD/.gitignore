@@ -1,0 +1,11 @@
+# Ignore all compiled Java class files
+*.class
+
+# Ignore build directories (where Eclipse sends compiled output)
+bin/
+target/
+
+# Optional: Ignore Eclipse-specific metadata files
+.project
+.classpath
+.settings/
